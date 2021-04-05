@@ -1,0 +1,32 @@
+/* 
+    '*' - se refere a todo o documento sendo renderizado.  
+    parte do codigo seguinte é chamado de reset CSS.
+    É importante resetar  paddings e margins do body do css, 
+    já que cada navegador os preenches com diferentes valores, 
+    fazendo com que o site possa se contrastar em diferentes browsers
+*/
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box: seta o limite do elemento como a borda da caixa, impedindo que os elementos expandam esse limite */
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    /* Na falta da fonte principal, ela será substituída pela outra fonte declarada posteriormente */
+}
+
+header .container {}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+}
