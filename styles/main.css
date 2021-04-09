@@ -6,8 +6,13 @@
     fazendo com que o site possa se contrastar em diferentes browsers
 */
 
+@font-face {
+    font-family: narcos-font;
+    src: url(/assets/OPTIAkrogroteskBold-Cond.otf);
+}
+
 :root {
-    --vermelho: rgba(229,9,20,255);
+    --azul: rgba(45, 80, 250);
     --preto: #141414;
 }
 
@@ -28,7 +33,7 @@ body {
 }
 
 #filme-principal {
-    background: url('/img/capa.webp');
+    background: url('/img/capa-narcos.jpg');
     box-shadow: inset 20px 20px 200px #000;
 
     height: 570px;
@@ -60,7 +65,7 @@ body {
 }
 
 .container-header .logo {
-    color: var(--vermelho);
+    color: var(--azul);
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     margin-right: 45px;
@@ -98,23 +103,19 @@ body {
     margin-left: 4%;
 }
 
-#filme-principal .descricao {
-    margin-top: 10px;
-    width: 60%;
-    margin-bottom: 20px;
-}
-
-.descricao {
-    font-size: 19px;
-    text-shadow: -1px 2px 8px #000;
-}
-
 #filme-principal .titulo {
-    width: 58%;
-    height: 54%;
-    font-family: 'Roboto', serif;
-    text-shadow: -1px 2px 8px #000;
+    font-size: 90px;
+    font-family: narcos-font, serif;
+    text-shadow: 4px 5px 5px #000;
 }
+
+#filme-principal .descricao {
+    width: 60%;
+    margin-bottom: 30px;
+    font-size: 19px;
+    text-shadow: 2px 2px 6px #000;
+}
+
 
 .botao-assistir {
     background-color: rgba(255, 255, 255, 1);
@@ -171,7 +172,7 @@ body {
 }
 
 #filme-principal .container{
-    width: 60%;
+    width: 50%;
 }
 
 .box-filme {
