@@ -24,6 +24,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
+    <!-- Bibilioteca jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Scroll down - header-background-color -->
+    <script src="/script.js"></script>
 </head>
 <body>
     <!--
@@ -38,15 +43,15 @@
 -->
 
     <main>
-        <div class="filme-principal">
+        <div id="filme-principal">
                 <div class="container-header">
                     <h2 class="logo">NETFLIX</h2>
                     <nav class="nav-one">
                         <a class="selected" href="#">Início</a>
-                        <a href="#">Série</a>
-                        <a href="#">Filmes</a>
-                        <a href="#">Bombando</a>
-                        <a href="#">Minha lista</a>
+                        <a class="no-selected" href="#">Série</a>
+                        <a class="no-selected" href="#">Filmes</a>
+                        <a class="no-selected" href="#">Bombando</a>
+                        <a class="no-selected" href="#">Minha lista</a>
                     </nav>
                     <nav class="nav-two">
                         <a href="#"><span class="material-icons">search</span></a>
@@ -76,10 +81,11 @@
         </div>
     </main>
 
-    <div class="carrosel-filmes">
+    <div class="carrossel-filmes">
+        <h3>Populares na Netflix</h3>
         <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+                    <img class="box-filme first" src="img/mini1.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
                     <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
@@ -117,7 +123,6 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
- 
 
  
 </body>
